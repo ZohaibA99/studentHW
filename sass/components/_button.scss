@@ -1,0 +1,28 @@
+.button{
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    background-color: var(--secondary-active-color);
+    color: white;
+    border-radius: 4px;
+    border-color: transparent;
+    margin-top: 31px;
+    margin-left: 500px;
+    margin-bottom: 200px;
+}
+
+.bttn-close{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 11px;
+    right: 12px;
+}
+
+.footer__submit{
+    padding: 10px 48px 10px 48px;
+    background-color: var(--secondary-active-color);
+    color: white;
+    width: 200px;
+    height: 50px;
+}

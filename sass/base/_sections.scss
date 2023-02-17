@@ -1,0 +1,18 @@
+.section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section__heading{
+    color: var(--secondary-txt-color);
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: .03em;
+}
+
+.section__heading--space{
+    margin-top: 128px;
+}

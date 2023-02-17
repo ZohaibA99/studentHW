@@ -1,0 +1,61 @@
+.is-hidden{
+    visibility: hidden;
+}
+
+.modal-bg{
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+
+.modal{
+    position: fixed;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+}
+
+.form__label{
+    display: block;
+    position: relative;
+}
+
+.form__text{
+    position: absolute;
+    font-size: 12px;
+    top: -16px;
+}
+
+.form__icons{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.form__input{
+    width: 100%;
+    margin: 0 0 29px 0;
+    padding: 11px 16px 11px 40px;
+}
+
+.footer__formSection{
+    margin-left: 92px;
+}
+
+.footer-form{
+    display: flex;
+}
+
+.footer__input{
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
