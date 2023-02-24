@@ -2,7 +2,11 @@
     display: flex;
     padding-top: 29px;
     padding-bottom: 29px;
-    padding-left: 125px;
+    padding-left: 215px;
+
+    @media screen and (max-width: 1199px){
+        padding-left: 15px;
+    }
 }
 
 .nav{
@@ -27,9 +31,9 @@
             display: flex;
         }
 
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             margin-left: auto;
-            margin-right: 215px;
+            display: block;
         }
 
 

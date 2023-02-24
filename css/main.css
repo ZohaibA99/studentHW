@@ -59,22 +59,27 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
+  max-width: 480px;
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
+    max-width: 1280px;
   }
 }
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+  }
 }
 
 .section__heading {
@@ -101,7 +106,17 @@ body {
   border-color: transparent;
   margin: 0 auto;
   margin-top: 31px;
-  margin-bottom: 200px;
+  margin-bottom: 178px;
+}
+@media screen and (min-width: 768px) {
+  .button {
+    margin-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    margin-bottom: 0px;
+  }
 }
 
 .bttn-close {
@@ -277,7 +292,12 @@ body {
   display: flex;
   padding-top: 29px;
   padding-bottom: 29px;
-  padding-left: 125px;
+  padding-left: 215px;
+}
+@media screen and (max-width: 1199px) {
+  .header {
+    padding-left: 15px;
+  }
 }
 
 .nav {
@@ -304,10 +324,10 @@ body {
     display: flex;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     margin-left: auto;
-    margin-right: 215px;
+    display: block;
   }
 }
 
@@ -372,7 +392,7 @@ body {
   .slogan {
     font-size: 44px;
     width: 696px;
-    margin-top: 200px;
+    margin-top: 190px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -386,32 +406,26 @@ body {
 .hero--bg {
   background-image: url("/images/Hero-m.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 100%;
 }
-@media (max-width: 767px), (min-device-resolution: 2), (-webkit-min-device-resolution: 2), (min-resolution: 96dpi), (min-resolution: 2ppi) {
+@media (min-device-pixel-ratio: 2) and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px), (min-resolution: 96dpi) and (max-width: 768px), (min-resolution: 2ppi) and (max-width: 768px) {
   .hero--bg {
     background-image: url("/images/Hero-m@2x.jpg");
   }
 }
-@media (min-width: 768px), (min-device-resolution: 2), (-webkit-min-device-resolution: 2), (min-resolution: 96dpi), (min-resolution: 2ppi) {
+@media (min-width: 1200px) {
   .hero--bg {
-    background-image: url("/images/Hero-t@2x.jpg");
+    background-image: url("/images/Title.jpg");
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .hero--bg {
     background-image: url("/images/Hero-t.jpg");
   }
 }
-@media (min-width: 1200px), (min-device-resolution: 2), (-webkit-min-device-resolution: 2), (min-resolution: 96dpi), (min-resolution: 2ppi) {
+@media (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px), (min-resolution: 96dpi) and (min-width: 768px) and (max-width: 1199px), (min-resolution: 2ppi) and (min-width: 768px) and (max-width: 1199px) {
   .hero--bg {
-    background-image: url("/images/Title-d@2.jpg");
-  }
-}
-@media (min-width: 1200px) {
-  .hero--bg {
-    background-image: url("/images/Title-d.jpg");
-    background-size: 100%;
+    background-image: url("/images/Hero-t@2x.jpg");
   }
 }
 
@@ -441,31 +455,35 @@ body {
 }
 
 .features {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
+  display: block;
   width: 450px;
 }
 @media screen and (min-width: 768px) {
   .features {
-    flex-basis: 50%;
+    display: flex;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features {
-    flex-basis: 50%;
+    display: flex;
     flex-wrap: nowrap;
+    width: 1170px;
+    margin-top: 0;
   }
 }
 
 .what-we-do {
   display: flex;
-  margin-top: -30px;
+  align-items: center;
 }
 
 .what-we-do__item {
   margin-top: 30px;
   margin-left: 30px;
+  align-items: center;
 }
 
 .what-we-do--smallerScreeen {
@@ -491,7 +509,7 @@ body {
   .our-team {
     flex-wrap: nowrap;
     flex-basis: 25%;
-    width: 1280px;
+    width: 1170px;
   }
 }
 
@@ -533,6 +551,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.team__image {
+  width: 100%;
 }
 
 .customers {
@@ -656,6 +678,4 @@ body {
 
 .footer__paragraph {
   margin: 0 auto;
-  margin-top: 48px;
-  margin-left: 167px;
 }/*# sourceMappingURL=main.css.map */

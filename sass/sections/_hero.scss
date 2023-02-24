@@ -16,7 +16,7 @@
     @media screen and (min-width: 1200px){
         font-size: 44px;
         width: 696px;
-        margin-top: 200px;
+        margin-top: 190px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px){
@@ -31,38 +31,27 @@
 .hero--bg{
     background-image: url("/images/Hero-m.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100%;
 
-    @media (max-width: 767px),
-    (min-device-resolution: 2),
-    (-webkit-min-device-resolution: 2),
-    (min-resolution: 96dpi),
-    (min-resolution: 2ppi){
+    @media (min-device-pixel-ratio: 2) and (max-width: 768px),
+    (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px),
+    (min-resolution: 96dpi) and (max-width: 768px),
+    (min-resolution: 2ppi) and (max-width: 768px){
         background-image: url("/images/Hero-m@2x.jpg");
     }
 
-    @media (min-width: 768px),
-    (min-device-resolution: 2),
-    (-webkit-min-device-resolution: 2),
-    (min-resolution: 96dpi),
-    (min-resolution: 2ppi){
-        background-image: url("/images/Hero-t@2x.jpg");
+    @media (min-width: 1200px){
+        background-image: url("/images/Title.jpg");
     }
 
-    @media (min-width: 768px){
+    @media (min-width: 768px) and (max-width: 1199px){
         background-image: url("/images/Hero-t.jpg");
     }
 
-    @media (min-width: 1200px),
-    (min-device-resolution: 2),
-    (-webkit-min-device-resolution: 2),
-    (min-resolution: 96dpi),
-    (min-resolution: 2ppi){
-        background-image: url("/images/Title-d@2.jpg");
-    }
-
-    @media (min-width: 1200px){
-        background-image: url("/images/Title-d.jpg");
-        background-size: 100%
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+    (min-resolution: 96dpi) and (min-width: 768px) and (max-width: 1199px),
+    (min-resolution: 2ppi) and (min-width: 768px) and (max-width: 1199px){
+        background-image: url("/images/Hero-t@2x.jpg");
     }
 }
