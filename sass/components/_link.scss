@@ -3,59 +3,72 @@
     font-weight: 500;
     line-height: 1.15;
     letter-spacing: 0.02em;
-    color: var(--secondary-txt-color)
+    color: $secondary-txt-color;
+
+    &--active{
+        color: $secondary-active-color;
+    }
+
+    &:hover,
+    &:focus{
+        color: $secondary-active-color;
+    }
 }
 
-.nav__link--active{
-    color: var(--secondary-active-color);
-}
-
-.nav__link:hover,
-.nav__link:focus{
-    color: var(--secondary-active-color);
-}
-
-.contacts__email,
-.contacts__phone{
-    color: var(--main-txt-color);
+.contacts__email{
+    color: $main-txt-color;
     font-size: 13px;
     line-height: 1.15px;
     letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus{
+        color: $secondary-active-color;
+    }
 }
 
-.contacts__email:hover,
-.contacts__email:focus,
-.contacts__phone:hover,
-.contacts__phone:focus{
-    color: var(--secondary-active-color)
+.contacts__phone{
+    color: $main-txt-color;
+    font-size: 13px;
+    line-height: 1.15px;
+    letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus{
+        color: $secondary-active-color;
+    }
 }
 
 .socialMedia__icon{
-    fill: var(--social-icon-color);
-}
+    fill: $social-icon-color;
 
-.socialMedia__icon:hover{
-    fill: white;
+    &:hover,
+    &:focus{
+        fill: white;
+    }
 }
 
 .socialMedia__icon--bg{
     fill: white;
+
+    &:hover,
+    &:focus{
+        fill: $secondary-active-color;
+    }
 }
 
-.socialMedia__icon--bg:hover{
-    fill: var(--secondary-active-color);
-}
 
 .address__link:hover, 
 .address__link:focus{
-    color: var(--secondary-active-color);
+    color: $secondary-active-color;
 }
 
 .footer__icon--bg{
     fill: #44454E;
-}
 
-.footer__icon--bg:hover{
-    fill: var(--secondary-active-color);
+    &:hover,
+    &:focus{
+        fill: $secondary-active-color;
+    }
 }
 

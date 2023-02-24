@@ -1,0 +1,35 @@
+.customers{
+    display: flex;
+    margin-bottom: 92px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 30px);
+
+    @media screen and (min-width: 1200px){
+        flex-wrap: nowrap;
+    }
+
+    @media screen and (min-width: 768px){
+        flex-wrap: wrap;
+        flex-basis: calc(100% / 3 - 60px);
+    }
+    
+}
+
+.customers__icon{
+    background-color: white;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    padding: 16px 32px 16px 32px;
+}
+
+.customers__item{
+    margin-top: 15px;
+    margin-left: 15px;
+
+    @media screen and (min-width: 1200px){
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}

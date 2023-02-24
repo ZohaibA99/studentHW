@@ -1,0 +1,68 @@
+.slogan{
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $tertiary-txt-color;
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    @media screen and (min-width: 1200px){
+        font-size: 44px;
+        width: 696px;
+        margin-top: 200px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        font-size: 26px;
+        width: 360px;
+        margin-top: 100px;
+    }
+}
+
+
+
+.hero--bg{
+    background-image: url("/images/Hero-m.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    @media (max-width: 767px),
+    (min-device-resolution: 2),
+    (-webkit-min-device-resolution: 2),
+    (min-resolution: 96dpi),
+    (min-resolution: 2ppi){
+        background-image: url("/images/Hero-m@2x.jpg");
+    }
+
+    @media (min-width: 768px),
+    (min-device-resolution: 2),
+    (-webkit-min-device-resolution: 2),
+    (min-resolution: 96dpi),
+    (min-resolution: 2ppi){
+        background-image: url("/images/Hero-t@2x.jpg");
+    }
+
+    @media (min-width: 768px){
+        background-image: url("/images/Hero-t.jpg");
+    }
+
+    @media (min-width: 1200px),
+    (min-device-resolution: 2),
+    (-webkit-min-device-resolution: 2),
+    (min-resolution: 96dpi),
+    (min-resolution: 2ppi){
+        background-image: url("/images/Title-d@2.jpg");
+    }
+
+    @media (min-width: 1200px){
+        background-image: url("/images/Title-d.jpg");
+        background-size: 100%
+    }
+}

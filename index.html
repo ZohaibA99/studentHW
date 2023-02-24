@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf8">
     <title>Web Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
     <header class="header">
@@ -24,10 +25,10 @@
             <a class="link contacts__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
             <a class="link contacts__phone" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
         </div>
-    </header>
+      </header>
 
-    <main class="main">
-        <section class="section hero--bg">
+    <main class="main hero--bg">
+        <section class="section">
             <div class="container">
                 <h1 class="slogan">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
                 <button class="button" data-modal-open>Request our service</button>
@@ -38,25 +39,37 @@
             <div class="container">
             <ul class="list features">
                 <li class="features__items">
+                    <svg class="features__icon" width="270" height="120">
+                      <use href="./images/icons.svg#icon-antenna-1-1"></use>
+                    </svg>
                     <p class="features__title">Attention to Details</p>
                     <p class="features__discription">We go into all the details and processes of your business to develop a customized solution.</p>
                 </li>
                 <li class="features__items">
+                  <svg class="features__icon" width="270" height="120">
+                    <use href="./images/icons.svg#icon-clock-1-1"></use>
+                  </svg>
                     <p class="features__title">Punctuality</p>
                     <p class="features__discription">With us, you can feel safe and secure. An important principle of the company: respect your time and respect the agreed deadlines.</p>
                 </li>
                 <li class="features__items">
+                  <svg class="features__icon" width="270" height="120">
+                    <use href="./images/icons.svg#icon-diagram-1-1"></use>
+                  </svg>
                     <p class="features__title">Planning</p>
                     <p class="features__discription">You will be able to observe and participate in every phase of solution development and implementation.</p>
                 </li>
                 <li class="features__items">
+                  <svg class="features__icon" width="270" height="120">
+                    <use href="./images/icons.svg#icon-astronaut-1-1"></use>
+                  </svg>
                     <p class="features__title">Modern Technologies</p>
                     <p class="features__discription">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
                 </li>
             </ul>
         </section>
 
-        <section class="section">
+        <section class="section what-we-do--smallerScreeen">
             <div class="container">
             <h2 class="section__heading">What We Do</h2>
             <ul class="list what-we-do">
@@ -78,9 +91,12 @@
             <h2 class="section__heading">Our Team</h2>
             <ul class="list our-team">
                 <li class="our-team__item">
-                    <img src="./images/img (8).jpg" width="255px">
-                    <p class="our-team__name">
-                        Christopher Walker
+                  <picture>
+                    <source srcset="/images/Teammember1.jpg 1x, /images/Teammember1@2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="/images/Teammember1-t.jpg 1x, /images/Teammember1-t@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="/images/Teammember1-m.jpg 1x, /images/Teammember1-m@2x.jpg 2x" media="(max-width: 767px)"/>
+                    <img src="/images/Teammember1-m.jpg"/>
+                  </picture>
                     </p>
                     <p class="our-team__position">
                         Product Designer
@@ -129,7 +145,7 @@
                       </ul>
                 </li>
                 <li class="our-team__item">
-                    <img src="./images/img (9).jpg" width="255px">
+                    <img src="./images/img (9).jpg" width="auto">
                     <p class="our-team__name">
                         Kylie Evans
                     </p>
@@ -180,7 +196,7 @@
                       </ul>
                 </li>
                 <li class="our-team__item">
-                    <img src="./images/img (10).jpg" width="255px">
+                    <img src="./images/img (10).jpg" width="auto">
                     <p class="our-team__name">
                         Ryan Harris
                     </p>
@@ -231,7 +247,7 @@
                       </ul>
                 </li>
                 <li class="our-team__item">
-                    <img src="./images/img (11).jpg" width="255px">
+                    <img src="./images/img (11).jpg" width="auto">
                     <p class="our-team__name">
                         Tyler Moore
                     </p>
@@ -324,8 +340,8 @@
         </section>
     </main>
     <footer class="footer footer--background">
-        <div>
-        <a class="logo link" href="#">WebStudio</a>
+        <div class="footer__address">
+        <a class="logo footer__logo link" href="#">WebStudio</a>
         <address class="address">  
             <p class="address__location">695 Prak Ave, New York, NY 10065<br>
                 United States</p>
@@ -334,7 +350,7 @@
         </address>
         </div>
         <div class="footer--socials">
-            <p>FIND US ON</p>
+            <p class="footer__paragraph">FIND US ON</p>
             <ul class="list socialMedia">
                 <li class="socialMedia__item">
                   <a class="socialMedia_link" href="">
@@ -430,5 +446,6 @@
         </div>
       </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobilemenue.js"></script>
 </body>
 </html>

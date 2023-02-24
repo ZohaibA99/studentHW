@@ -1,0 +1,18 @@
+.what-we-do{
+    display: flex;
+    margin-top: -30px;
+}
+
+.what-we-do__item{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+.what-we-do--smallerScreeen{
+    display: none;
+
+    @media screen and (min-width: 1280px){
+        display: block;
+    }
+}
